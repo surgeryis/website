@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<header>
+<link rel="stylesheet" href="styles.css"> 
+<script type="text/javascript">
+
+function land(ref, target)
+{
+	lowtarget=target.toLowerCase();
+	if (lowtarget=="_self") {window.location=loc;}
+	else {if (lowtarget=="_top") {top.location=loc;}
+	else {if (lowtarget=="_blank") {window.open(loc);}
+	else {if (lowtarget=="_parent") {parent.location=loc;}
+	else {parent.frames[target].location=loc;};
+}}}
+}
+function jump(menu)
+{
+	ref=menu.choice.options[menu.choice.selectedIndex].value;
+	splitc=ref.lastIndexOf("*");
+	target="";
+	if (splitc!=-1)
+	{loc=ref.substring(0,splitc);
+	target=ref.substring(splitc+1,1000);}
+	else {loc=ref; target="_self";};
+	if (ref != "") {land(loc,target);}
+}
+
+</script>
+<title>Surgery IS</title>
+
+</header>
+<h1>Surgery IS page<h1>
+
+<body>
+	<form action="dummy" method="post"><select name="choice" size="1" onChange="jump(this.form)"><option value="">Surgery Links</option>
+		<option value="https://docs.google.com/forms/d/e/1FAIpQLSeHIj0gF3Vfk8OcGyomupGPkqaC1VTt8S43zeWNMhDHBuHudQ/viewform?usp=pp_url">Inventory Form</option>
+		<option value="https://docs.google.com/spreadsheets/d/1f19bbEb-sWowUB39aeSgTRuSSu8bC76-7-48c2WYJ18/edit?usp=sharing">Inventory Page</option>
+		<option value="https://docs.google.com/spreadsheets/d/1f19bbEb-sWowUB39aeSgTRuSSu8bC76-7-48c2WYJ18/edit?usp=sharing">Old Inventory</option>
+		<option value="https://goo.gl/sEY6Ip">Imaging Steps</option>
+		<option value='http://bit.ly/2Z136rr'>Door Codes</option>
+		<option value="https://docs.google.com/document/d/1K4CX4XeYljdgGfwcmom0wTZLpeWeK1tTwWW2R-ICoec/edit?usp=sharing">Ricoh IPS</option>
+		<option value="https://docs.google.com/document/d/1_pEAwRhxgyvBycp9oXr3rxgLHUDxqJvJL8xT60gzl10/edit?usp=sharing">Video Conference</option>
+		<option value="https://uphsnet.uphs.upenn.edu/athenaselfservice">Help Desk</option>
+		<option value="https://goo.gl/tpXpo4">Websites</option>
+		<option value="https://docs.google.com/document/d/13v0-8m2i02n5uYdw5IN_d9BiXe3r4S1WOhT0mFs7N70/pub">Drive Mappings</option></select></form>
+<p> Made by Tim Mitzen</p>	
+
+</body>
+
+</html>
+    
