@@ -56,8 +56,9 @@ html {
 }
 .container {
   
-  max-width: 1900px;
+  max-width: 900px;
   margin:0 auto;
+ 
  
 }
 p {
@@ -72,7 +73,7 @@ h2 {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  height: 200px;
+  height: 150px;
   background: lavender;
   
   }
@@ -116,7 +117,7 @@ h2 {
   display: flex;
   align-items: center;
   flex-direction: column-reverse;
-  height: 250px;
+  height: 200px;
   background:lavender;
   font-size: 2rem;
   
@@ -126,10 +127,8 @@ h2 {
 }
 
 .box5 {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-  height: 90px;
+ 
+  height: 190px;
   background:lavender;
 }
 
@@ -140,8 +139,9 @@ h2 {
   
 
 footer {
-  width: 12%;
-  padding: 1rem;
+  width: 100%;
+  padding-top: 100px;
+  
   background: lavender;
   color: darkred;
 }
@@ -149,4 +149,8 @@ footer {
 .logo{
   width: 20%;
   
+}
+ol {
+  font-size: 2.2rem;
+  text-align: center;
 }
