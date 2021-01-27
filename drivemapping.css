@@ -81,3 +81,6 @@ a{
     font-size: 1.8rem;
     
 }
+li {
+	text-align: left;
+}
